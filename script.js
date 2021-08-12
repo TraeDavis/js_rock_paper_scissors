@@ -14,13 +14,10 @@ function computerPlay(){
     return(options[randomPick]);
 }
 
-// create a function that plays a single round of Rock Paper Scissors. The function should take two parameters - the playerSelection and computerSelection - and then return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
-        // (Side-Note)Make your function’s playerSelection parameter case-insensitive (so users can input rock, ROCK, RocK or any other variation).
-
+// create a function that plays a single round of Rock Paper Scissors. Then return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
 function playRound(){
     const computerSelection = computerPlay();
     const playerSelection = prompt("To start select rock, paper, or scissors:").toLowerCase();
-
 
     // if statements to test if player wins or loses.
     if (playerSelection === 'rock' && computerSelection === 'paper'){
@@ -71,14 +68,15 @@ function playRound(){
 }
 
 function game(){
-    // play game for 5 rounds and keep track of winner and loser
+    // play game for 5 rounds.
     console.log("Best of 5 rounds wins!!")
         for (let i = 1; i <= 5 ; i++){
             console.log(playRound());
         }
-
+    // console log winner.Computer wins if there is a tie.
         (playerScore > compScore) ? console.log("You win!!") : console.log("The computer won.");
 
     
 }
+
 game();
