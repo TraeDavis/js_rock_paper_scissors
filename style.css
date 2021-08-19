@@ -1,0 +1,45 @@
+.hide{
+    display: none;
+}
+h1{
+    text-align: center;
+}
+
+h3{
+    margin: 0 5rem;
+}
+button{
+    font-size: 124px;
+    cursor: pointer;
+}
+.score-winner{
+    text-align: center;
+}
+.winner{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.score-info{
+    display: flex;
+    justify-content: center;
+}
+.player-selected,
+.computer-selected{
+    margin-top: 2rem;
+    text-align: center;
+}
+.btn-container{
+    display: flex;
+    width: 40%;
+    margin: 4rem auto;
+    justify-content: space-around;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+.restart-btn{
+    font-size: 80px;
+    width: 40%;
+}
